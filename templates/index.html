@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body style="background: lightskyblue;">
+<hr style="border-color: black; color: black; ">
+<h2 class="container-fluid" style="align-items: center; padding-left:40pt;">All Tasks</h2>
+<hr style="border-color: black; color: black; ">
+<h3 style="color: red;">*To create Scheduled API with parameters as DateTime and url: navigate to localhost/api</h3>
+{% for tasks in object_list %}
+<div class="container-fluid" style="background-color: black; color: darkorange;  width: 40%;">
+    <h3 style="padding-left: 8pt; font-weight: lighter">DateTime: {{tasks.DateTime}}</h3>
+    <h4 style="padding-left: 8pt; font-weight: lighter">Taskurl:  {{tasks.url}}</h4>
+</div>
+{% endfor %}
+
+
+</body>
+</html>
